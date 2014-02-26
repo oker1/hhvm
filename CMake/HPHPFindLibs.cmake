@@ -27,6 +27,10 @@ if (LIBDL_INCLUDE_DIRS)
 	endif()
 endif()
 
+foreach(path ${CMAKE_INCLUDE_PATH})
+  include_directories(${path})
+endforeach()
+
 # boost checks
 find_package(Boost 1.49.0 COMPONENTS system program_options filesystem regex REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
