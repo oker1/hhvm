@@ -19,8 +19,8 @@
 
 #include "folly/ScopeGuard.h"
 
-#include <libelf.h>
-#include <gelf.h>
+#include <libelf/libelf.h>
+#include <libelf/gelf.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
